@@ -1,6 +1,6 @@
 {
   "name": "darkmode-toggle-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": " A customizable and easy-to-integrate React component for implementing a dark mode toggle switch.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
