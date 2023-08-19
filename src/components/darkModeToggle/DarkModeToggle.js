@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import Toggle from '../toggle/Toggle';
-export const DarkModeToggle =({}) => {
-    const [theme , setThemeActive ] = useState( localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
+export const DarkModeToggle =({theme = 'light' , setThemeActive }) => {
     const root = document.documentElement;
-   
    
     useEffect(()=>{
       if(!localStorage.getItem('theme') || (theme != 'light' && theme != 'dark')){
@@ -19,7 +17,7 @@ export const DarkModeToggle =({}) => {
     },[theme]);
 
     const setTheme = ()=>{
-      
+
       let mode = theme === 'light'?'dark': 'light';
       localStorage.setItem('theme', mode );
       setThemeActive(mode);
