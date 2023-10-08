@@ -15,7 +15,7 @@
     animation: keyframes-fill .5s;
     --color: black;
     fill: var(--color);
-    
+    width: 30px;
   }
   
   .container .sun {
@@ -23,7 +23,8 @@
     display: none;
     animation: keyframes-fill .5s;
     --color: rgb(214, 214, 214);
-    fill: var(--color);
+    /* fill: var(--color); */
+    width: 30px;
 
   }
   
@@ -34,6 +35,7 @@
   
   .container input:checked ~ .sun {
     display: block;
+    width: 30px;
   }
   
   /* ------ Hide the default checkbox ------ */
